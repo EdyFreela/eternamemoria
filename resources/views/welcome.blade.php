@@ -183,19 +183,6 @@
 @endsection
 
 @section('script')
-<script>
-    $(window).scroll(function() {
-      if ($(document).scrollTop() > 50) {
-        $('nav').addClass('shrink');
-        $('#brand-img').addClass('shrink-img');
-        $('.navbar-brand').addClass('shrink-navbar');
-      } else {
-        $('nav').removeClass('shrink');
-        $('#brand-img').removeClass('shrink-img');
-        $('.navbar-brand').removeClass('shrink-navbar');
-      }
-    });    
-</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
 <script>
 $(document).ready(function () {

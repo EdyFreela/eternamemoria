@@ -162,7 +162,48 @@
         .section-footer .links ul li{
             list-style: none; 
             margin-bottom:10px;
-        }        
+        }
+        .section-register{
+            min-height: calc(100vh);
+            padding-top:180px;
+            background-color: #000;
+            background: url('{{asset('assets/img/banner-familia.jpg')}}') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;           
+        }
+
+        .section-register .panel{
+            background-color: transparent;
+            border: 0px solid transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .section-register .panel-default>.panel-heading {
+            color: #333;
+            background-color: #feb362;
+            border-color: transparent;
+            text-align: center;
+            font-weight: bold;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            margin: 15px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;            
+        }
+        .section-register .panel-body label{
+            color:#fff;
+            text-transform: uppercase;
+        }
+        .section-register .panel-body button{
+            background-color:#feb362;
+            text-transform: uppercase;
+            border: none;
+        }
 
         /* Extra Small Devices, Phones */ 
         @media only screen and (min-width : 320px) {
@@ -319,6 +360,19 @@
             }
           }); 
     </script>
+    <script>
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+            $('#brand-img').addClass('shrink-img');
+            $('.navbar-brand').addClass('shrink-navbar');
+          } else {
+            $('nav').removeClass('shrink');
+            $('#brand-img').removeClass('shrink-img');
+            $('.navbar-brand').removeClass('shrink-navbar');
+          }
+        });    
+    </script>    
     @yield('script')
 </body>
 </html>
