@@ -245,6 +245,53 @@
             text-transform: uppercase;
         }
 
+        .section-password-reset{
+            min-height: calc(100vh);
+            padding-top:180px;
+            background-color: #000;
+            background: url('{{asset('assets/img/banner-familia.jpg')}}') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;           
+        }
+        .section-password-reset .panel{
+            background-color: transparent;
+            border: 0px solid transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .section-password-reset .panel-default>.panel-heading {
+            color: #333;
+            background-color: #feb362;
+            border-color: transparent;
+            text-align: center;
+            font-weight: bold;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            margin: 15px;
+            padding: 10px 16px;
+            font-size: 18px;
+            line-height: 1.3333333;
+            border-radius: 6px;
+            text-transform: uppercase;           
+        }        
+        .section-password-reset .panel-body {
+            padding: 0px 15px 0px 15px;
+        }
+        .section-password-reset .panel-body label{
+            color:#fff;
+            text-transform: uppercase;
+        }
+        .section-password-reset .panel-body button{
+            background-color:#feb362;
+            text-transform: uppercase;
+            border: none;
+            width: 100%;
+            margin-top: 25px;
+        }
+
+
         /* Extra Small Devices, Phones */ 
         @media only screen and (min-width : 320px) {
             .section-one{
