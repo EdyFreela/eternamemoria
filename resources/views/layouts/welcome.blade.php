@@ -173,14 +173,12 @@
             -o-background-size: cover;
             background-size: cover;           
         }
-
         .section-register .panel{
             background-color: transparent;
             border: 0px solid transparent;
             -webkit-box-shadow: none;
             box-shadow: none;
         }
-
         .section-register .panel-default>.panel-heading {
             color: #333;
             background-color: #feb362;
@@ -203,6 +201,48 @@
             background-color:#feb362;
             text-transform: uppercase;
             border: none;
+        }
+
+        .section-login{
+            min-height: calc(100vh);
+            padding-top:180px;
+            background-color: #000;
+            background: url('{{asset('assets/img/banner-familia.jpg')}}') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;           
+        }
+        .section-login .panel{
+            background-color: transparent;
+            border: 0px solid transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+        .section-login .panel-body {
+            padding: 0px 15px 0px 15px;
+        }
+        .section-login .panel-body label{
+            color:#fff;
+            text-transform: uppercase;
+        }
+        .section-login .panel-body button{
+            background-color:#feb362;
+            text-transform: uppercase;
+            border: none;
+            width: 100%;
+            margin-top: 25px;
+        }
+        .section-login .btn-link, .btn-link.active, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
+            color: #feb362 !important;
+            padding: 0;
+            font-size: 11px;            
+        }
+        .section-login .btn-primeiro-acesso{
+            background-color: #feb362 !important;
+            width:100%;
+            border:0px solid transparent;
+            text-transform: uppercase;
         }
 
         /* Extra Small Devices, Phones */ 
