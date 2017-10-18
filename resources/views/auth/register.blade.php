@@ -42,20 +42,6 @@
                                 </div>
                             </div>
 
-                            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-
-                                <div class="col-md-12">
-                                    <label for="email">Digite seu E-Mail Novamente</label>
-                                    <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
-
-                                    @if ($errors->has('email'))
-                                        <span class="help-block">
-                                            <strong>{{ $errors->first('email') }}</strong>
-                                        </span>
-                                    @endif
-                                </div>
-                            </div>
-
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 
                                 <div class="col-md-8">
