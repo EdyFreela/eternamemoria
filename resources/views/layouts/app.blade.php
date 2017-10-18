@@ -16,12 +16,42 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
+        /* GERAL */
         body {
-            font-family: 'Lato';
+            font-family: 'Quicksand', sans-serif;
         }
-
+        .btn{
+            color:#000;
+            font-weight: bold;
+        }
         .fa-btn {
             margin-right: 6px;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            border: 0px solid transparent;
+        }
+        nav.navbar{
+           -webkit-transition: all 0.8s ease;
+           transition: all 0.8s ease;
+        }
+        nav.navbar{
+            background-color: #000;    
+        }
+        .navbar-default .navbar-nav>li>a {
+            color: #fff;
+           -webkit-transition: all 0.3s ease;
+           transition: all 0.3s ease;            
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }       
+        .navbar-default .navbar-nav>li>a:focus, 
+        .navbar-default .navbar-nav>li>a:hover {
+            color: orange;
+        }                
+        #brand-img{
+            width: 60%;
         }
     </style>
 </head>
@@ -39,8 +69,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Eterna Memória
+                <a class="navbar-brand" href="{{ url('/home') }}">
+                    <img src="{{asset('/assets/img/logo-eterna-memoria.png')}}" id="brand-img">
                 </a>
             </div>
 

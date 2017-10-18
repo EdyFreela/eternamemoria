@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::auth();
 
-#Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 
 Route::get('pedido/create',      ['as'=>'pedido.create',    'uses' => 'PedidoController@create']);
 Route::post('pedido/create',     ['as'=>'pedido.store',     'uses' => 'PedidoController@store']);
