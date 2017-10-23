@@ -7,6 +7,9 @@
 
     <title>Eterna Memória</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="{{url('favicon.png')}}" />
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700">
@@ -82,6 +85,9 @@
             min-height: calc(100vh - 85px);
             padding-top:30px;
             background-color: #f1f1f1;
+        }
+        .section-two .container{
+            padding-bottom: 100px !important;
         }
         .section-two .panel-produto{
             border: 0;
@@ -291,15 +297,33 @@
             margin-top: 25px;
         }
 
-
         /* Extra Small Devices, Phones */ 
-        @media only screen and (min-width : 320px) {
+        @media only screen and (max-width : 360px) {
+            #brand-img {
+                -webkit-transition: -webkit-transform 0.3s;
+                transition: transform 0.3s;
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+            }
+            .navbar-brand {
+                padding: 0;
+            }
+            nav.navbar.shrink {
+                min-height: 80px;
+            }
+            .navbar-toggle {
+                margin-top: 23px;
+            }            
             .section-one{
                 background: url('{{asset('assets/img/banner-eternizando-momentos.jpg')}}') no-repeat center center fixed;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;            
+                -webkit-background-size: 140%;
+                -moz-background-size: 140%;
+                -o-background-size: 140%;
+                background-size: 140%;
+                background-position-y: 8vh;
+                background-position-x: center;
+                background-color: #000;
+                min-height: 50vh;            
             }            
             .section-two .btn-finalizar-compra{
                 margin-top: 20px;
@@ -374,7 +398,7 @@
                     <li class="col-xs-4 col-sm-12 col-md-12 col-lg-12"><h1><a href="#comprar">COMPRAR</a></h1></li>
                 </ul>
             </div>
-            <div class="col-md-8 text-center endereco">
+            <div class="col-xs-12 col-md-8 text-center endereco">
                 <h1>Revenda Produtos Eterna Memória</h1>
                 <p>Teremos prazer de entrar em contato com você.</p>
                 {!! Form::open(array('route' => 'pedido.store','method'=>'POST')) !!}
@@ -390,7 +414,7 @@
                 </div>
                 {!! Form::close() !!}                
             </div>
-            <div class="col-md-2 text-center social">
+            <div class="col-xs-12 col-md-2 text-center social">
                 <h1>Contato</h1>
                 <p><a href="mailto:eternamemoria@gmail.com">eternamemoria@gmail.com</a></p>
                 <a href="" class="btn btn-default btn-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -424,7 +448,7 @@
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $('html, body').animate({
-                  scrollTop: target.offset().top
+                  scrollTop: target.offset().top -110
                 }, 1000, function() {
                   // Callback after animation
                   // Must change focus!
