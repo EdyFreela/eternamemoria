@@ -297,6 +297,19 @@
             margin-top: 25px;
         }
 
+        /* Small Devices, Tablets */
+        @media only screen and (max-width : 768px) {
+            .section-tree{
+                background-image: none;
+            }
+            .section-footer .links ul{
+                display: inline-flex;
+            }
+            .section-footer .links ul li{
+                text-align: center !important;
+            }            
+        }        
+
         /* Extra Small Devices, Phones */ 
         @media only screen and (max-width : 360px) {
             #brand-img {
@@ -328,6 +341,9 @@
             .section-two .btn-finalizar-compra{
                 margin-top: 20px;
                 margin-bottom: 20px;
+            }
+            .section-tree{
+                background-image: none;
             }
             .section-tree .frase{
                 text-align: center;
